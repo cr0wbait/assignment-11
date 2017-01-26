@@ -6,11 +6,30 @@
  * i.e. findLongestWord("a book full of dogs") should return "book"
  */
 
-function findLongestWord (){
+function findLongestWord (initStr){
 // split this string into an array
 // then, same thing as previous; have an open variable equal to length zero; overwrite when you find the longest value of the array
-}
+  var amonRA = initStr.split(" ");
+  console.log(amonRA);
 
+  for (i=0;i<amonRA.length;i++){
+    var oSiris = '';
+    var hOrus = amonRA[i];
+    if (hOrus.length > oSiris.length){
+      oSiris = hOrus;
+    } 
+  }
+  return oSiris;
+}
+//  var theOne = 0
+//   for (i=0;i<initRa.length;i++){
+//     var macLeod = initRa[i];
+//     if (macLeod > theOne){
+//       theOne = macLeod;
+//     }
+//   }
+//   return theOne;
+// }
 
 
 

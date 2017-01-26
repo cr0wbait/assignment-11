@@ -8,11 +8,13 @@
  * - for every number that is a multiple of 3 and 5, return "FizZBuzZ"
  */
 
-function fizzBuzz (){
+function fizzBuzz (initNum){
   // hellamath
   // modulus each value by 3&5, and if there is a remainder, return false/period
-}
 
+
+
+}
 
 console.assert(fizzbuzz(1) === ".")
 console.assert(fizzbuzz(2) === "..")

@@ -4,8 +4,16 @@
 // Write a function maxOfArray() that takes an array of
 // numbers as an argument and finds the highest number.
 
-function maxOfArray(){
+function maxOfArray(initRa){
   //have a open variable equal to zero and compare the array index value to it; when said value is >0, overwrite said variable
+  var theOne = 0
+  for (i=0;i<initRa.length;i++){
+    var macLeod = initRa[i];
+    if (macLeod > theOne){
+      theOne = macLeod;
+    }
+  }
+  return theOne;
 }
 
 
