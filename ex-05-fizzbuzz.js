@@ -8,14 +8,23 @@
  * - for every number that is a multiple of 3 and 5, return "FizZBuzZ"
  */
 
-function fizzBuzz (initNum){
+function fizzbuzz (initNum){
   // hellamath
   // modulus each value by 3&5, and if there is a remainder, return false/period
-
-
-
-}
-
+var beeTalk = ' ';
+  for (i=0;i<initNum;i++){
+    var izBuzz = initNum[i];
+    if (izBuzz % 3 > 0 && izBuzz % 5 > 0){
+      beeTalk = beeTalk + '.';
+    } if (izBuzz % 5 === 0 && izBuzz % 3 > 0){
+        beeTalk = beeTalk + 'buzz';
+      } if (izBuzz % 3 === 0 && izBuzz % 5 > 0){
+            beeTalk = beeTalk + 'fizz'
+          } if (izBuzz % 3 === 0 && izBuzz % 5 === 0){
+            beeTalk = beeTalk + 'FizZBuzZ';
+          }
+    } return beeTalk
+  }
 console.assert(fizzbuzz(1) === ".")
 console.assert(fizzbuzz(2) === "..")
 console.assert(fizzbuzz(3) === "..fizz")
