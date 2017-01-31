@@ -11,19 +11,22 @@
 function fizzbuzz (initNum){
   // hellamath
   // modulus each value by 3&5, and if there is a remainder, return false/period
-var beeTalk = ' ';
+
+var beeTalk = '';
   for (i=0;i<initNum;i++){
     var izBuzz = initNum[i];
     if (izBuzz % 3 > 0 && izBuzz % 5 > 0){
       beeTalk = beeTalk + '.';
-    } if (izBuzz % 5 === 0 && izBuzz % 3 > 0){
+    } else if (izBuzz % 5 === 0 && izBuzz % 3 > 0){
         beeTalk = beeTalk + 'buzz';
-      } if (izBuzz % 3 === 0 && izBuzz % 5 > 0){
+      } else if (izBuzz % 3 === 0 && izBuzz % 5 > 0){
             beeTalk = beeTalk + 'fizz'
-          } if (izBuzz % 3 === 0 && izBuzz % 5 === 0){
+          } else if (izBuzz % 3 === 0 && izBuzz % 5 === 0){
             beeTalk = beeTalk + 'FizZBuzZ';
           }
-    } return beeTalk
+    }
+    console.log(beeTalk)
+     return beeTalk
   }
 console.assert(fizzbuzz(1) === ".")
 console.assert(fizzbuzz(2) === "..")

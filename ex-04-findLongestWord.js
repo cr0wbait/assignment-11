@@ -10,15 +10,15 @@
  // then, same thing as previous; have an open variable equal to length zero; overwrite when you find the longest value of the array
 
 
+ // 1 split oSiris into a character array
+ // 2 compare oSiris to daNoNos
+ // 3 if anything in oSiris = daNoNos, pop that character
+ // 4 look for oSiris again
+
+ //    }
+ //  }
+
 function findLongestWord (initStr){
-//  function thePinochet (initStr){
-//    var rnd2Str = "";
-//    for (i=0;i<initStr.length;i++){
-//      if (initStr[i] !== "'"){
-//        initStr.splice(initStr[i], 1);
-//      }
-//    }
-//  }
   var sunRA = initStr.split(' ');
   var oSiris = '';
   for (i=0;i<sunRA.length;i++){
